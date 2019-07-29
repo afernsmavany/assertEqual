@@ -1,5 +1,7 @@
 
-const assertEqual = function(actual, expected) {
+const assertEqual = require('./assertEqual');
+
+/*const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return " :-) :-) Assertion Passed: (actual) === (expected)";
   }   else {
@@ -10,7 +12,7 @@ const assertEqual = function(actual, expected) {
 console.log(assertEqual("Lighthouse Labs", "Bootcamp"));
 console.log(assertEqual(1, 1));
 console.log(assertEqual(2, 1));
-console.log(assertEqual("Lighthouse Labs", "Lighthouse Labs"));
+console.log(assertEqual("Lighthouse Labs", "Lighthouse Labs"));*/
 
 
 const tail = function(array) {
@@ -21,9 +23,11 @@ const tail = function(array) {
   return newArray;
 };
 
-console.log(tail(["bananas", "apples", "lions"]));
+//console.log(tail(["bananas", "apples", "lions"]));
 
 // Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+//const words = ["Yo Yo", "Lighthouse", "Labs"];
+//tail(words); // no need to capture the return value since we are not checking it
+//assertEqual(words.length, 3); // original array should still have 3 elements!
+
+module.exports = tail;
